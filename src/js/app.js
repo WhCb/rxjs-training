@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom';
 
 // Custom Components
-import App from './index'
+import DumbButtonClickHandle from './DumbButtonClickHandle'
+import BasicMappingAndFilter from './BasicMappingAndFilter'
 
 ReactDOM.render(
-  <App />,
+  <Fragment>
+    <DumbButtonClickHandle />
+    <BasicMappingAndFilter />
+  </Fragment>,
   document.getElementById('root')
 )
